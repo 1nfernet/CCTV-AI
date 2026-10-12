@@ -1,0 +1,54 @@
+# ──────────────────────────────────────────────
+# Smart AI CCTV Assistant – .gitignore
+# ──────────────────────────────────────────────
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+.venv/
+env/
+cctv-env/
+
+# Environment variables
+.env
+
+# Data & Models (large files)
+data/recordings/*
+data/faces/*.pkl
+*.pt
+models/yolo/*.pt
+models/face/*.pkl
+vector_store/*.index
+vector_store/*.pkl
+
+# Database
+database/*.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+data/logs/*.log
+
+# Keep directory structure
+!data/recordings/.gitkeep
+!data/faces/.gitkeep
+!data/logs/.gitkeep
+!models/yolo/.gitkeep
+!models/face/.gitkeep
